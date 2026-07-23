@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#060708">
+  <meta name="description" content="THEEDITORRAJ — premium music edits, slowed + reverb, DJ remix and cinematic visuals.">
+  <meta property="og:title" content="THEEDITORRAJ — Official Creator Website">
+  <meta property="og:description" content="Music edits, latest releases, popular videos and cinematic creator stories.">
+  <meta property="og:image" content="assets/creator.jpg">
+  <title>THEEDITORRAJ — Official Creator Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="universe-launcher.js"></script>
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-mark">TR</div>
+    <p>THEEDITORRAJ</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="grain"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="container nav">
+      <a href="#home" class="brand"><span class="brand-mark">TR</span><span>THEEDITORRAJ</span></a>
+      <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#latest">Latest</a>
+        <a href="#popular">Popular</a>
+        <a href="#shorts">Shorts</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeBtn" class="circle-btn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button id="menuBtn" class="circle-btn menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">OFFICIAL CREATOR WEBSITE</div>
+          <h1>Music edits.<br><span>Made to be felt.</span></h1>
+          <p>Slowed + reverb, DJ remixes and cinematic visual edits by <b>THEEDITORRAJ</b>.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-light" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ?sub_confirmation=1">
+              <i class="fa-brands fa-youtube"></i> Subscribe
+            </a>
+            <a class="btn btn-dark" href="#latest"><i class="fa-solid fa-play"></i> Watch latest</a>
+            <button class="btn btn-dark" id="shareBtn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+          </div>
+
+          <div class="live-strip">
+            <div><strong id="subscriberCount">—</strong><span>Subscribers</span></div>
+            <div><strong id="viewCount">—</strong><span>Total views</span></div>
+            <div><strong id="videoCount">—</strong><span>Uploads</span></div>
+          </div>
+          <p id="dataStatus" class="data-status">Connecting live YouTube data…</p>
+        </div>
+
+        <div class="hero-player reveal delay-1">
+          <article class="music-card">
+            <div class="music-cover">
+              <img src="assets/cover.jpg" alt="THEEDITORRAJ">
+              <div class="music-cover-fallback">TR</div>
+              <div class="music-shade"></div>
+            </div>
+            <div class="music-meta">
+              <div>
+                <small>NOW PLAYING</small>
+                <h3>Midnight Edit Session</h3>
+                <p>THEEDITORRAJ</p>
+              </div>
+              <button id="heroPlay" class="play-btn" aria-label="Play music"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="player-line"><span id="progress"></span></div>
+            <div id="wave" class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <audio id="audio" loop><source src="music/music-1.mp3" type="audio/mpeg"></audio>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section class="identity-band">
+      <div class="identity-track">
+        THEEDITORRAJ • MUSIC EDITS • SLOWED + REVERB • DJ REMIX • CINEMATIC VISUALS • THEEDITORRAJ • MUSIC EDITS •
+      </div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-label">LATEST RELEASES</span>
+            <h2>Fresh from the channel</h2>
+          </div>
+          <a href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ/videos" target="_blank">View all <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="toolbar reveal">
+          <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="videoSearch" type="search" placeholder="Search videos..."></label>
+          <div class="filters" id="filters">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="haryanvi">Haryanvi</button>
+            <button data-filter="rajasthani">Rajasthani</button>
+            <button data-filter="bollywood">Bollywood</button>
+            <button data-filter="dj">DJ Remix</button>
+          </div>
+        </div>
+
+        <div id="latestGrid" class="video-grid"></div>
+        <div id="latestSkeleton" class="skeleton-grid"><i></i><i></i><i></i></div>
+        <div class="center"><button id="loadMoreBtn" class="btn btn-outline">Load more</button></div>
+      </div>
+    </section>
+
+    <section class="section popular-section" id="popular">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-label">TRENDING NOW</span>
+            <h2>Most played edits</h2>
+          </div>
+        </div>
+        <div id="popularGrid" class="popular-grid"></div>
+      </div>
+    </section>
+
+    <section class="section shorts-section" id="shorts">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-label">QUICK WATCH</span>
+            <h2>Vertical edits & shorts</h2>
+          </div>
+          <a href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ/shorts" target="_blank">Open Shorts <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div id="shortsGrid" class="shorts-grid"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="assets/creator.jpg" alt="THEEDITORRAJ">
+          <div class="about-photo-fallback">ADD YOUR PHOTO</div>
+          <div class="photo-caption"><span>THE CREATOR</span><b>Raj Suratpura</b></div>
+        </div>
+
+        <div class="about-copy reveal delay-1">
+          <span class="section-label">ABOUT THE CREATOR</span>
+          <h2>Built from music,<br>mood and visual storytelling.</h2>
+          <p>I’m Raj Suratpura, the creator behind THEEDITORRAJ—focused on lofi edits, slowed + reverb mixes, DJ remixes and cinematic visual experiences.</p>
+
+          <div class="skill-grid">
+            <div><i class="fa-solid fa-wave-square"></i><b>Music Edits</b><span>Slowed, reverb and mood-based mixes</span></div>
+            <div><i class="fa-solid fa-film"></i><b>Visual Direction</b><span>Cinematic thumbnails and edit concepts</span></div>
+            <div><i class="fa-solid fa-headphones"></i><b>Creator Brand</b><span>Music-first identity across platforms</span></div>
+          </div>
+
+          <div class="about-actions">
+            <a class="btn btn-light" target="_blank" href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ"><i class="fa-brands fa-youtube"></i> Main channel</a>
+            <a class="btn btn-outline" target="_blank" href="https://www.instagram.com/rdx_raaaj"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section socials-section" id="links">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="section-label">SOCIAL NETWORK</span><h2>Connect everywhere</h2></div>
+        </div>
+        <div class="social-grid reveal">
+          <a href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ" target="_blank"><i class="fa-brands fa-youtube"></i><div><b>YouTube</b><span>Main channel</span></div><strong>↗</strong></a>
+          <a href="https://www.instagram.com/rdx_raaaj" target="_blank"><i class="fa-brands fa-instagram"></i><div><b>Instagram</b><span>@rdx_raaaj</span></div><strong>↗</strong></a>
+          <a href="https://open.spotify.com/user/DjRAj06" target="_blank"><i class="fa-brands fa-spotify"></i><div><b>Spotify</b><span>DJ Raj</span></div><strong>↗</strong></a>
+          <a href="https://soundcloud.com/DjRAj06" target="_blank"><i class="fa-brands fa-soundcloud"></i><div><b>SoundCloud</b><span>DJ Raj mixes</span></div><strong>↗</strong></a>
+          <a href="https://x.com/raj_suratpura29" target="_blank"><i class="fa-brands fa-x-twitter"></i><div><b>X / Twitter</b><span>@raj_suratpura29</span></div><strong>↗</strong></a>
+          <a href="https://github.com/RDX-RAj" target="_blank"><i class="fa-brands fa-github"></i><div><b>GitHub</b><span>RDX-RAj</span></div><strong>↗</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="section-label">JOIN THE COMMUNITY</span>
+          <h2>More music.<br>More mood. Every week.</h2>
+        </div>
+        <a class="btn btn-light" href="https://www.youtube.com/channel/UCXBXbRGKFvyH83jjgCVD2gQ?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube"></i> Subscribe now</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="mini-player" id="miniPlayer">
+    <img src="assets/cover.jpg" alt="">
+    <div class="mini-meta"><b>Midnight Edit Session</b><span>THEEDITORRAJ</span></div>
+    <div class="mini-line"><span id="miniProgress"></span></div>
+    <button id="miniPlay" aria-label="Play or pause"><i class="fa-solid fa-play"></i></button>
+  </div>
+
+  <nav class="mobile-nav">
+    <a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#latest"><i class="fa-solid fa-clock"></i><span>Latest</span></a>
+    <a href="#popular"><i class="fa-solid fa-fire"></i><span>Popular</span></a>
+    <a href="#shorts"><i class="fa-solid fa-bolt"></i><span>Shorts</span></a>
+  </nav>
+
+  <footer>
+    <div class="container footer">
+      <a href="#home" class="brand"><span class="brand-mark">TR</span><span>THEEDITORRAJ</span></a>
+      <p>© <span id="year"></span> THEEDITORRAJ. All rights reserved.</p>
+      <button id="topBtn" class="circle-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+</body>
+</html>

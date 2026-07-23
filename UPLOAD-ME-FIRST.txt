@@ -1,0 +1,16 @@
+RDX-RAj/test1 FINAL UPLOAD
+
+1. Extract this ZIP.
+2. Upload every file and folder inside it directly to the ROOT of RDX-RAj/test1.
+3. Then upload your own media with these exact paths:
+
+assets/creator.jpg
+assets/cover.jpg
+assets/logo.png       (optional)
+assets/favicon.png    (optional)
+music/music-1.mp3
+
+Do not put the extracted outer folder inside the repository. index.html must be visible directly in the repository root.
+
+GitHub Pages:
+Settings > Pages > Deploy from branch > main > /(root) > Save
