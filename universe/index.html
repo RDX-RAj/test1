@@ -1,1 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#010208">
+  <meta name="description" content="EDITOR RAJ Omega Engine — cinematic 3D creator universe">
+  <title>EDITOR RAJ — Omega Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="boot">
+    <div class="boot-orb"><i></i></div>
+    <strong>EDITOR RAJ Ω ENGINE</strong>
+    <span id="bootLine">Generating spiral galaxy…</span>
+    <div class="boot-bar"><b id="bootBar"></b></div>
+  </div>
 
+  <div id="scene"></div>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+  <div class="chromatic"></div>
+
+  <header class="hud">
+    <a class="brand" href="../"><span>EDITOR RAJ</span><b>Ω CREATOR ENGINE</b></a>
+    <div class="status"><i></i><span id="status">GALAXY ONLINE</span></div>
+    <div class="hud-actions">
+      <button id="resetCamera">RESET</button>
+      <button id="audioToggle">AUDIO OFF</button>
+    </div>
+  </header>
+
+  <section id="intro" class="intro">
+    <small>THE CREATOR OPERATING SYSTEM</small>
+    <h1>Beyond a website.<br><em>Inside a universe.</em></h1>
+    <p>Drag the galaxy. Tap a world. Travel through the creator system.</p>
+    <div class="actions">
+      <button id="enter" class="primary">ENTER Ω ENGINE</button>
+      <button id="motion" class="secondary">ENABLE MOTION</button>
+    </div>
+  </section>
+
+  <aside id="panel" class="panel">
+    <button id="closePanel" class="close">×</button>
+    <small id="panelCode">WORLD ∞</small>
+    <h2 id="panelTitle">AI Core</h2>
+    <p id="panelText"></p>
+    <div id="panelBody"></div>
+    <button id="travel" class="primary full">TRAVEL TO WORLD</button>
+  </aside>
+
+  <div id="radar" class="radar"></div>
+
+  <nav class="dock">
+    <button data-world="identity"><i>01</i><span>Identity</span></button>
+    <button data-world="music"><i>02</i><span>Music</span></button>
+    <button data-world="studio"><i>03</i><span>Studio</span></button>
+    <button data-world="community"><i>04</i><span>Live</span></button>
+    <button data-world="core"><i>∞</i><span>Core</span></button>
+  </nav>
+
+  <div id="toast"></div>
+  <audio id="music" loop preload="metadata"><source src="../music/music-1.mp3" type="audio/mpeg"></audio>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
